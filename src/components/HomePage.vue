@@ -54,3 +54,14 @@ const submit = () => {
   reset();
 };
 </script>
+
+<style scoped>
+@font-face {
+  font-family: "MadeSunflower";
+  src: url("../assets/fonts/Made.woff");
+}
+
+main h1 {
+  font-family: "MadeSunflower";
+}
+</style>

@@ -3,10 +3,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-@font-face {
-  font-family: "Made Sunflower";
-  src: url("../../src/assets/fonts/Made.woff");
-}
 body {
   font-family: sans-serif;
 }
@@ -75,7 +71,6 @@ main {
 
 main h1 {
   font-size: 96px;
-  font-family: "Made Sunflower";
   font-weight: 400;
   margin-bottom: 30px;
 }
