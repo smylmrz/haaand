@@ -15,8 +15,8 @@
         volutpat, sagittis, id in leo, aenean eget. id in leo, aenean eget.
       </p>
       <div class="form-box">
-        <input type="text" placeholder="Your email address" />
-        <button>
+        <input type="text" v-model="email" placeholder="Your email address" />
+        <button @click="submit">
           <img src="../assets/right-arrow.svg" alt="right-arrow" />
         </button>
       </div>
