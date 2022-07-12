@@ -1,5 +1,6 @@
 <template>
   <div class="wrapper">
+    <Alert :message="alertMessage" />
     <div class="bg">
       <img src="../assets/bg.jpg" alt="" />
     </div>
@@ -25,20 +26,31 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
+import { watchEffect, ref } from "vue";
 import { getUsers, addUser } from "@/firebase";
+import Alert from "./Alert.vue";
+
+const alertMessage = ref(null);
 
 // import { getAnalytics } from "firebase/analytics";
 let users = getUsers();
 const email = ref("");
+
+const reset = () => {
+  email.value = "";
+
+  setTimeout(() => {
+    alertMessage.value = null;
+  }, 3000);
+};
 
 const submit = () => {
   if (!email.value) {
     return;
   }
 
-  addUser(email.value);
+  alertMessage.value = addUser(email.value);
 
-  email.value = "";
+  reset();
 };
 </script>

@@ -18,8 +18,6 @@ export const getUsers = () => {
     });
   });
 
-  console.log(users.value);
-
   return users;
 };
 
@@ -31,10 +29,18 @@ const userExits = (email) => users.value.some((user) => user.email === email);
 
 export const addUser = (email) => {
   if (userExits(email)) {
-    return false;
+    return {
+      type: "error",
+      message: "This email is already registered",
+    };
   }
 
   addDoc(colRef, {
     email: email,
   });
+
+  return {
+    type: "success",
+    message: "Your email is registered. Stay tuned!",
+  };
 };
