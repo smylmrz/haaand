@@ -59,21 +59,6 @@ const submit = () => {
   src: url("../assets/fonts/Made.woff");
 }
 
-.alert {
-  position: absolute;
-  top: 30px;
-  min-width: 300px;
-  border-radius: 20px;
-  background-color: #fff;
-  box-shadow: -18px 20px 21px -10px rgba(145, 145, 145, 0.11);
-  padding: 20px;
-  right: 30px;
-  display: flex;
-  gap: 8px;
-  align-items: center;
-  z-index: 3;
-}
-
 .wrapper {
   min-height: 100vh;
   position: relative;
