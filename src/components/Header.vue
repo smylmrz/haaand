@@ -11,7 +11,7 @@
   filter: invert(1);
   position: relative;
   z-index: 2;
-  width: 140px;
+  width: 120px;
 }
 
 .logo img {

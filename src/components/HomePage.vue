@@ -62,7 +62,7 @@ const submit = () => {
 .wrapper {
   min-height: 100vh;
   position: relative;
-  background-image: url("../assets/bg.jpg");
+  background-image: url("../assets/beads.jpg");
   background-size: cover;
   position: relative;
 }
