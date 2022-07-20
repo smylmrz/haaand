@@ -1,5 +1,5 @@
 <template>
-  <footer>&copy; 2022 Haaand. All Rights Reserved</footer>
+  <footer>&copy; 2022 Haaand. Bütün hüquqları qorunur</footer>
 </template>
 
 <style scoped>

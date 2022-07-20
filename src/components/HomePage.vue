@@ -11,8 +11,8 @@
         volutpat, sagittis, id in leo, aenean eget. id in leo, aenean eget.
       </p>
       <form class="form-box" @submit.prevent="submit">
-        <input type="text" v-model="email" placeholder="Your email address" />
-        <button>
+        <input type="text" v-model="email" placeholder="E-mail adresiniz" />
+        <button title="Göndər">
           <img src="../assets/right-arrow.svg" alt="right-arrow" />
         </button>
       </form>
@@ -64,7 +64,6 @@ const submit = () => {
   position: relative;
   background-image: url("../assets/beads.jpg");
   background-size: cover;
-  position: relative;
 }
 
 .wrapper::after {
@@ -99,7 +98,7 @@ main {
   font-size: 3rem;
   font-weight: 400;
   margin-bottom: 30px;
-  font-family: "MadeSunflower";
+  font-family: "MadeSunflower", serif;
 }
 
 .text {
@@ -127,7 +126,6 @@ input {
   transition: 0.2s ease-in-out;
   padding-left: 20px;
   font-size: 18px;
-  transition: 0.2s ease-in-out;
 }
 
 input:focus {
