@@ -1,0 +1,241 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    padding: 1.8rem;
+    color: #000;
+    background-image: url("../bg-gradient.jpg");
+    background-size: cover;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo--desktop {
+    display: none;
+}
+
+.logo--mobile {
+    display: block;
+}
+
+.hero {
+    margin-top: 65px;
+    text-align: center;
+}
+
+.hero__title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 3rem;
+    margin-bottom: 24px;
+}
+
+.hero__desc {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.hero__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero__img {
+    margin-bottom: -30px;
+}
+
+.hero__form input {
+    font-size: 14px;
+    line-height: 25px;
+    color: #000;
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 8px;
+    padding: 12px 18px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    outline: none;
+    width: 100%;
+}
+
+.hero__form__input:focus,
+.hero__form__input:active {
+    outline: none;
+}
+
+.hero__form input::placeholder {
+    color: #000;
+}
+
+.hero__form button {
+    background-color: #000;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    width: 100%;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+}
+
+.hero__form button:focus,
+.hero__form button:active {
+    outline: none;
+}
+
+.services {
+    flex-direction: column;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.services__card {
+    flex-direction: column;
+    text-align: center;
+}
+
+.services__card:nth-child(2) {
+    border: none;
+    padding: 45px 0;
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
+
+.services__card__text {
+    font-size: 14px;
+    line-height: 25px;
+    max-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.services__card__image {
+    margin-bottom: 20px;
+}
+
+/* Desktop */
+
+@media screen and (min-width: 540px) {
+    .logo--mobile {
+        display: none;
+    }
+
+    .logo--desktop {
+        display: block;
+    }
+
+    .hero {
+        margin-top: 60px;
+    }
+
+    .hero__title {
+        font-size: 96px;
+        line-height: 160%;
+        margin-bottom: 60px;
+    }
+
+    .hero__success {
+        font-size: 32px;
+        line-height: 180%;
+        text-align: center;
+        margin-top: 45px;
+    }
+
+    .hero__desc {
+        font-size: 20px;
+        line-height: 36px;
+        margin-bottom: 70px;
+    }
+
+    .hero__img {
+        position: absolute;
+        width: 105px;
+        height: 105px;
+        display: inline-block;
+        transform: rotate(-30deg);
+        top: -50px;
+        left: -70px;
+        margin-bottom: 0;
+    }
+
+    .hero__img img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .hero__form {
+        display: flex;
+        flex-direction: row;
+        max-width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        margin-bottom: 140px;
+    }
+
+    .hero__form input {
+        line-height: 29px;
+        border-radius: 8px 0 0 8px;
+        padding: 12px 18px;
+        margin: 0;
+        position: relative;
+        z-index: 2;
+        width: 400px;
+    }
+
+    .hero__form button {
+        padding: 14px 22px;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        width: 120px;
+    }
+
+    .services {
+        display: flex;
+        gap: 75px;
+        margin-bottom: 0;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+    .services__card {
+        display: flex;
+        align-items: center;
+        padding: 12px 0;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .services__card:nth-child(2) {
+        border-left: 1px solid #000;
+        border-right: 1px solid #000;
+        border-top: none;
+        border-bottom: none;
+        padding: 0 75px;
+        margin: 0;
+    }
+
+    .services__card__image {
+        margin-right: 20px;
+        margin-bottom: 0;
+    }
+
+    .services__card__text {
+        font-size: 14px;
+        text-align: left;
+        max-width: 100%;
+        margin: 0
+    }
+}
