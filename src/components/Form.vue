@@ -4,6 +4,8 @@
     <h1 class="hero__title">
       Kiçik biznesinizi <br />
       Böyütməyin vaxtıdır
+
+      <img src="../assets/img/stars.png" alt="star icon">
     </h1>
     <!-- Hero Description -->
     <p class="hero__desc">

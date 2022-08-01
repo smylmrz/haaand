@@ -37,6 +37,12 @@ body {
     font-size: 30px;
     line-height: 3rem;
     margin-bottom: 24px;
+    position: relative;
+}
+
+.hero__title img {
+    position: absolute;
+    width: 25px;
 }
 
 .hero__desc {
@@ -144,6 +150,11 @@ body {
         font-size: 96px;
         line-height: 160%;
         margin-bottom: 60px;
+        font-weight: bold;
+    }
+
+    .hero__title img {
+        width: auto;
     }
 
     .hero__success {
