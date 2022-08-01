@@ -196,7 +196,7 @@ body {
     }
 
     .hero__form button {
-        padding: 14px 22px;
+        height: 100%;
         border-top-left-radius: 0;
         border-bottom-left-radius: 0;
         width: 120px;
